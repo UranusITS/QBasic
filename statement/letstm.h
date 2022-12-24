@@ -10,7 +10,7 @@ private:
     QString var;
     Expression *exp;
 public:
-    explicit LetStm(qint32 line, const QString &var, Expression *exp);
+    explicit LetStm(qint32 line, const QString &code, const QString &var, Expression *exp);
     qint32 run(QMap<QString, qint32> &varTable, QTextStream &stream) const override;
     void showTree(QTextStream &stream) const override;
 };

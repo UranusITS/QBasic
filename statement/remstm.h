@@ -8,7 +8,7 @@ class RemStm : public Statement
 private:
     QString text;
 public:
-    explicit RemStm(qint32 line, const QString &text);
+    explicit RemStm(qint32 line, const QString &code, const QString &text);
     qint32 run(QMap<QString, qint32> &varTable, QTextStream &stream) const override;
     void showTree(QTextStream &stream) const override;
 };

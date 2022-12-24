@@ -9,7 +9,7 @@ class PrintStm : public Statement
 private:
     Expression *exp;
 public:
-    explicit PrintStm(qint32 line, Expression *exp);
+    explicit PrintStm(qint32 line, const QString &code, Expression *exp);
     qint32 run(QMap<QString, qint32> &varTable, QTextStream &stream) const override;
     void showTree(QTextStream &stream) const override;
 };

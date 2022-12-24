@@ -1,6 +1,6 @@
 #include "endstm.h"
 
-EndStm::EndStm(qint32 line): Statement(line) {}
+EndStm::EndStm(qint32 line, const QString &code): Statement(line, code) {}
 
 qint32 EndStm::run(QMap<QString, qint32> &varTable, QTextStream &stream) const
 {

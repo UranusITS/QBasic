@@ -1,6 +1,6 @@
 #include "letstm.h"
 
-LetStm::LetStm(qint32 line, const QString &var, Expression *exp): Statement(line), var(var), exp(exp) {}
+LetStm::LetStm(qint32 line, const QString &code, const QString &var, Expression *exp): Statement(line, code), var(var), exp(exp) {}
 
 qint32 LetStm::run(QMap<QString, qint32> &varTable, QTextStream &stream) const
 {

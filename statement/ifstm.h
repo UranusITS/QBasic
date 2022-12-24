@@ -18,7 +18,7 @@ private:
     Expression *expl, *expr;
     qint32 n;
 public:
-    explicit IfStm(qint32 line, Operator opt, Expression *expl, Expression *expr, qint32 n);
+    explicit IfStm(qint32 line, const QString &code, Operator opt, Expression *expl, Expression *expr, qint32 n);
     qint32 run(QMap<QString, qint32> &varTable, QTextStream &stream) const override;
     void showTree(QTextStream &stream) const override;
 };

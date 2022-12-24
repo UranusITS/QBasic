@@ -1,6 +1,6 @@
 #include "printstm.h"
 
-PrintStm::PrintStm(qint32 line, Expression *exp): Statement(line), exp(exp) {}
+PrintStm::PrintStm(qint32 line, const QString &code, Expression *exp): Statement(line, code), exp(exp) {}
 
 qint32 PrintStm::run(QMap<QString, qint32> &varTable, QTextStream &stream) const
 {

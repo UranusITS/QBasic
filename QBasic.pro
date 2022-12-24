@@ -15,6 +15,7 @@ SOURCES += \
     expression/varexp.cpp \
     main.cpp \
     mainwindow.cpp \
+    parser.cpp \
     statement/endstm.cpp \
     statement/gotostm.cpp \
     statement/ifstm.cpp \
@@ -30,6 +31,7 @@ HEADERS += \
     expression/optexp.h \
     expression/varexp.h \
     mainwindow.h \
+    parser.h \
     statement/endstm.h \
     statement/gotostm.h \
     statement/ifstm.h \

@@ -1,6 +1,6 @@
 #include "remstm.h"
 
-RemStm::RemStm(qint32 line, const QString &text): Statement(line), text(text) {}
+RemStm::RemStm(qint32 line, const QString &code, const QString &text): Statement(line, code), text(text) {}
 
 qint32 RemStm::run(QMap<QString, qint32> &varTable, QTextStream &stream) const
 {

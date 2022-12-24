@@ -8,8 +8,9 @@ class InputStm : public Statement
 private:
     QString var;
 public:
-    explicit InputStm(qint32 line, const QString &var);
+    explicit InputStm(qint32 line, const QString &code, const QString &var);
     qint32 run(QMap<QString, qint32> &varTable, QTextStream &stream) const override;
+    QString getVar() const;
     void showTree(QTextStream &stream) const override;
 };
 
